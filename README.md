@@ -1,13 +1,8 @@
-<div align="center">
-  <h1>Bitcoindevkit by Example</h1>
-</div>
+# Bitcoindevkit by Example 😎
 
 <p style="text-align: right; height: 0px">
   <button class="btn js-toggle-dark-mode" style="position: relative; top: -3rem">Come to the dark side</button>
 </p>
-
-<h2 style="margin-bottom: -1em;"><a href="https://thunderbiscuit.github.io/bitcoindevkit-by-example/#bdk-cli">Part 1: bdk-cli</a></h2>
-<h2><a href="https://thunderbiscuit.github.io/bitcoindevkit-by-example/#bdk-jni">Part 2: bdk-jni</a></h2>
 
 <br/>
 <br/>
