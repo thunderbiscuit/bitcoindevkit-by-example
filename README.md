@@ -1,5 +1,18 @@
-# Quick Start
+<center>
+  <h1>Bitcoindevkit by Example</h1>
+</center>
 
+<p style="text-align: right; height: 0px">
+  <button class="btn js-toggle-dark-mode" style="position: relative; top: -3rem">Come to the dark side</button>
+</p>
+
+<h2><a href="https://thunderbiscuit.github.io/bitcoindevkit-by-example/#bdk-cli">Part 1: bdk-cli</a><h2>
+<h2><a href="https://thunderbiscuit.github.io/bitcoindevkit-by-example/#bdk-jni">Part 2: bdk-jni</a><h2>
+
+<br>
+<br>
+
+# bdk-cli
 There are a few ways to use `bdk-cli`:
 
 ### 1. Building from source
@@ -59,14 +72,14 @@ bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1
 
 <br>
 
-## Basics
+## Example Wallet
 
 The examples below make use of the following testnet BIP84 wallet:
 ```
 damage urban exercise recipe company execute ship damage offer point cereal exclude
 ```
 
-Using [Ian Coleman's online tool](https://iancoleman.io/bip39/), we find that the BIP32 root key for the mnemonic backup is
+Using [Ian Coleman's online tool](https://iancoleman.io/bip39/), we find that the BIP32 root key associated with the mnemonic backup is
 ```
 tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF
 ```
@@ -76,6 +89,9 @@ This means the descriptor for a BIP84 bitcoin testnet wallet, account 0, receive
 wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
 ```
 
+## Basic commands
 ```sh
 bdk-cli --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync
 ```
+
+# bdk-jni
