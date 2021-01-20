@@ -69,7 +69,7 @@ bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1
 
 ## Example Wallet
 
-The examples below make use of the following testnet BIP84 wallet:
+The examples below make use of the following _testnet_ BIP84 wallet:
 ```
 damage urban exercise recipe company execute ship damage offer point cereal exclude
 ```
@@ -79,27 +79,29 @@ Using [Ian Coleman's online tool](https://iancoleman.io/bip39/), we find that th
 tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF
 ```
 
-This means the descriptor for a BIP84 bitcoin testnet wallet, account 0, receive addresses would be:
+This means the descriptor for a BIP84 bitcoin testnet, account 0, series of receive addresses would be:
 ```sh
 wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
 ```
+<br>
 
-## Basic commands
+## Creating and Syncing a Wallet
+
+Sync your wallet to the blockchain:
 ```sh
 bdk-cli --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync
 ```
 
+The moment you give `bdk-cli` a descriptor, it creates a wallet for you in a small [`sled`]() database located at `~/.bdk-bitcoin/` on your machine. This wallet has a default name of _main_, and if you try and give bdk a new command but with a different descriptor (say you want to test with multiple wallets at once), it will throw an error, since the new descriptor will not match the currently existing 'main' wallet in the database.
+
+The way to play with multiple wallets at once is to name them as they are being created and as they are being used. The command above could be modified like so:
+
+```sh
+bdk-cli --wallet "testwalletnumber1" --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync
+```
+which will create a wallet called `testwalletnumber1` in the database. If you are dealing with multiple wallets, you must provide the `--wallet` option every time, unless you wish to use the default wallet.
+
 # bdk-jni
-
-
-
-
-
-
-
-
-
-
 
 
 <script>
