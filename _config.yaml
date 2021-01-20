@@ -1,2 +1,3 @@
 remote_theme: thunderbiscuit/just-the-docs
-title: "bdk-by-example"
+title: ""
+exclude: README.md
