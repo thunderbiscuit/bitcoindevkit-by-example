@@ -1,6 +1,6 @@
 # remote_theme: "pmarsceill/just-the-docs"
 remote_theme: "thunderbiscuit/just-the-docs"
-title: ""
+title: "Bitcoindevkit by Example"
 exclude: README.md
 
 search_enabled: true

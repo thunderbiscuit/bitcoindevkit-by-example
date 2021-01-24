@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: "Bitcoindevkit by example"
 nav_order: 1
 description: "Bitcoindevkit by example"
 permalink: /
@@ -16,6 +16,8 @@ permalink: /
 <br/>
 
 # bdk-cli
+
+## Getting Started
 There are a few ways to use `bdk-cli`:
 
 ### 1. Building from source
@@ -25,8 +27,7 @@ By cloning the repo, building the library, and calling the resulting executable 
 git clone https://github.com/bitcoindevkit/bdk-cli.git
 cargo run -- --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync
 ```
-The first set of double dashes indicates to cargo that what follows are arguments to send to the executable.
-
+The first set of double dashes indicates to cargo that what follows are arguments to send to the executable.  
 <br>
 
 ### 2. Installing the binary directly from crates.io
@@ -36,7 +37,6 @@ By installing the binaries directly from crates.io and calling the cli like so:
 cargo install bdk-cli
 bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync  
 ```
-
 <br>
 
 ### 3. REPL
@@ -72,10 +72,9 @@ bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1
   "address": "tb1q4er7kxx6sssz3q7qp7zsqsdx4erceahhax77d7"
 }
 ```
-
 <br>
 
-## Example Wallet
+## Basic Workflow and Example Wallet
 
 The examples below make use of the following _testnet_ BIP84 wallet:
 ```
@@ -91,6 +90,21 @@ This means the descriptor for a BIP84 bitcoin testnet, account 0, series of rece
 ```sh
 wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
 ```
+
+The basic workflow with `bdk-cli` looks like this: 
+1. If you are using the cli, you provide a descriptor every time, followed by a subcommand 
+```sh
+bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" sync
+bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" list_transactions
+```
+2. If you are using the repl, you provide a descriptor once (when entering the repl), and then as many subcommands as you want until you exit (but these subcommands can only apply to that one descriptor):
+```sh
+bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" repl
+>> sync
+>> list_transactions
+>> get_new_address
+```
+
 <br>
 
 ## Creating and Syncing a Wallet
@@ -107,8 +121,7 @@ The way to play with multiple wallets at once is to name them as they are being 
 ```sh
 bdk-cli --wallet "testwalletnumber1" --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync  
 ```
-which will create a wallet called `testwalletnumber1` in the database. If you are dealing with multiple wallets, you must provide the `--wallet` option every time, unless you wish to use the default wallet.
-
+which will create a wallet called `testwalletnumber1` in the database. If you are dealing with multiple wallets, you must provide the `--wallet` option every time, unless you wish to use the default wallet.  
 <br>
 
 ## Receiving coins
@@ -138,7 +151,6 @@ bdk-cli --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1
   }
 ]
 ```
-
 <br>
 
 ## Sending coins
@@ -182,7 +194,6 @@ AuILAAAAAAAAFgAUR/J8qBUWz+VI4IPMZf9h4V2LbWmgDAAAAAAAABYAFJBTurBUcr77iCpb0tPmCOGy
 }
 ```
 
-# bdk-jni
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
