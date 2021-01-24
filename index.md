@@ -91,11 +91,12 @@ This means the descriptor for a BIP84 bitcoin testnet, account 0, series of rece
 wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
 ```
 
-The basic workflow with `bdk-cli` looks like this: 
+The basic workflow of `bdk-cli` looks like this: 
 1. If you are using the cli, you provide a descriptor every time, followed by a subcommand 
 ```sh
 bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" sync
 bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" list_transactions
+bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" get_new_address
 ```
 2. If you are using the repl, you provide a descriptor once (when entering the repl), and then as many subcommands as you want until you exit (but these subcommands can only apply to that one descriptor):
 ```sh
@@ -104,17 +105,21 @@ bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" repl
 >> list_transactions
 >> get_new_address
 ```
-
 <br>
+
+## Using the Manual Pages (help)
+
 
 ## Creating and Syncing a Wallet
 
-Sync your wallet to the blockchain:
+You sync your wallet to the blockchain with the appropriately named `sync` command:
 ```sh
 bdk-cli --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync  
 ```
 
-The moment you give `bdk-cli` a descriptor, it creates a wallet for you in a small [`sled`]() database located at `~/.bdk-bitcoin/` on your machine. This wallet has a default name of _main_, and if you try and give bdk a new command but with a different descriptor (say you want to test with multiple wallets at once), it will throw an error, since the new descriptor will not match the currently existing 'main' wallet in the database.
+The moment you give `bdk-cli` a descriptor, it creates a entry for you in a small [`sled`]() database located at `~/.bdk-bitcoin/` on your machine. This wallet does not actually contain the descriptor (hence the need to provide it at every command) but does keep track of a few things for you that make it convenient. Note that you can delete this database at any time without loosing anything that cannot be rebuilt by syncing back up.
+
+This sort of "cache" a default name of _main_, and if you try and give bdk a new command but with a different descriptor (say you want to test with multiple wallets at once), it will throw an error, since the new descriptor will not match the currently existing 'main' wallet in the database.
 
 The way to play with multiple wallets at once is to name them as they are being created and used. The command above could be modified like so:
 
