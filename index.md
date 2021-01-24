@@ -1,3 +1,11 @@
+---
+layout: default
+title: Home
+nav_order: 1
+description: "Bitcoindevkit by example"
+permalink: /
+---
+
 # Bitcoindevkit by Example 😎
 
 <p style="text-align: right; height: 0px">
