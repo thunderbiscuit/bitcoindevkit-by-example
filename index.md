@@ -108,7 +108,24 @@ bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" repl
 <br>
 
 ## Using the Manual Pages (help)
+You can get information about how to use `bdk-cli` by using
+```sh
+# cli
+bdk-cli --help
 
+# repl
+>> help
+```
+
+You can also get additional information on specific subcommands by adding it to the `help` subcommand: 
+```sh
+# cli
+bdk-cli help list_transactions
+
+# repl
+>> help list_transactions
+```
+<br>
 
 ## Creating and Syncing a Wallet
 
