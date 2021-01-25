@@ -28,7 +28,6 @@ git clone https://github.com/bitcoindevkit/bdk-cli.git
 cargo run -- --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync
 ```
 The first set of double dashes indicates to cargo that what follows are arguments to send to the executable.  
-<br>
 
 ### 2. Installing the binary directly from crates.io
 By installing the binaries directly from crates.io and calling the cli like so:
@@ -37,7 +36,6 @@ By installing the binaries directly from crates.io and calling the cli like so:
 cargo install bdk-cli
 bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync  
 ```
-<br>
 
 ### 3. REPL
 By entering the repl like this:
