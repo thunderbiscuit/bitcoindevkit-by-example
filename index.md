@@ -74,23 +74,7 @@ bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1
 ```
 <br>
 
-## Basic Workflow and Example Wallet
-
-The examples below make use of the following _testnet_ BIP84 wallet:
-```
-damage urban exercise recipe company execute ship damage offer point cereal exclude
-```
-
-Using [Ian Coleman's online tool](https://iancoleman.io/bip39/), we find that the BIP32 root key associated with the mnemonic backup is
-```
-tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF
-```
-
-This means the descriptor for a BIP84 bitcoin testnet, account 0, series of receive addresses would be:
-```sh
-wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
-```
-
+## Basic Workflow
 The basic workflow of `bdk-cli` looks like this: 
 1. If you are using the cli, you provide a descriptor every time, followed by a subcommand 
 ```sh
@@ -104,6 +88,23 @@ bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" repl
 >> sync
 >> list_transactions
 >> get_new_address
+```
+<br>
+
+## Example Wallet
+The examples below make use of the following _testnet_ BIP84 wallet:
+```
+damage urban exercise recipe company execute ship damage offer point cereal exclude
+```
+
+Using [Ian Coleman's online tool](https://iancoleman.io/bip39/), we find that the BIP32 root key associated with the mnemonic backup is
+```
+tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF
+```
+
+This means the descriptor for a BIP84 bitcoin testnet, account 0, series of receive addresses would be:
+```sh
+wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
 ```
 <br>
 
@@ -128,7 +129,6 @@ bdk-cli help list_transactions
 <br>
 
 ## Creating and Syncing a Wallet
-
 You sync your wallet to the blockchain with the appropriately named `sync` command:
 ```sh
 bdk-cli --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync  
@@ -147,7 +147,6 @@ which will create a wallet called `testwalletnumber1` in the database. If you ar
 <br>
 
 ## Receiving coins
-
 ```sh
 bdk-cli --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" repl
 
@@ -176,7 +175,6 @@ bdk-cli --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1
 <br>
 
 ## Sending coins
-
 A simple send transaction is done using the following steps:
 1. Create the transaction (`create_tx --to <address:sat>`)
 2. Sign the psbt (`sign --psbt <psbt from step 1>`)
