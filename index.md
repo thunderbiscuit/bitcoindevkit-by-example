@@ -12,11 +12,25 @@ permalink: /
   <button class="btn js-toggle-dark-mode" style="position: relative; top: -3rem">Come to the dark side</button>
 </p>
 
-<br/>
+Exploring the bitcoindevkit ecosystem through a series of examples.
 
+<br/>
 <center>
 <img src="./img/bitcoindevkit-logo.svg" width="200">
 </center>
+<br/>
+
+<div style="display: flex; justify-content: space-evenly;">
+  <a href="#bdk-cli">
+    <h4>bdk-cli</h4>
+  </a>
+  <a href="#bdk-jni">
+    <h4>bdk</h4>
+  </a>
+  <a href="#bdk">
+    <h4>bdk-jni</h4>
+  </a>
+</div>
 <br/>
 
 # bdk-cli
@@ -212,6 +226,12 @@ AuILAAAAAAAAFgAUR/J8qBUWz+VI4IPMZf9h4V2LbWmgDAAAAAAAABYAFJBTurBUcr77iCpb0tPmCOGy
 }
 ```
 
+# bdk-jni
+This section is under construction!
+<br/>
+
+# bdk
+This section is under construction!
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
