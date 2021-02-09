@@ -32,6 +32,7 @@ Exploring the bitcoindevkit ecosystem through a series of examples.
   </a>
 </div>
 <br/>
+<hr/>
 
 # bdk-cli
 
