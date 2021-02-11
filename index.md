@@ -44,7 +44,7 @@ By cloning the repo, building the library, and calling the resulting executable 
 
 ```sh
 git clone https://github.com/bitcoindevkit/bdk-cli.git
-cargo run -- --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync
+cargo run -- wallet --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync
 ```
 The first set of double dashes indicates to cargo that what follows are arguments to send to the executable.  
 
@@ -58,7 +58,7 @@ By installing the binaries directly from crates.io and calling the cli like so:
 
 ```sh
 cargo install bdk-cli
-bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync  
+bdk-cli wallet --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync  
 ```
 
 ### 3. REPL
@@ -66,12 +66,12 @@ By entering the repl like this:
 
 ```sh
 cargo install bdk-cli
-bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" repl  
+bdk-cli repl --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)"  
 ```
 The repl allows you to set the descriptor once and enter a read-eval-print-loop, where the cli tool will allow you to enter as many subcommands as you wish until you break out of the loop. It looks something like this:
 
 ```sh
-bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" repl  
+bdk-cli repl --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)"  
 
 >> sync
 {}
@@ -100,13 +100,13 @@ bdk-cli --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1
 The basic workflow of `bdk-cli` looks like this: 
 1. If you are using the cli, you provide a descriptor every time, followed by a subcommand 
 ```sh
-bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" sync
-bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" list_transactions
-bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" get_new_address
+bdk-cli wallet --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" sync
+bdk-cli wallet --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" list_transactions
+bdk-cli wallet --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" get_new_address
 ```
 2. If you are using the repl, you provide a descriptor once (when entering the repl), and then as many subcommands as you want until you exit (but these subcommands can only apply to that one descriptor):
 ```sh
-bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" repl
+bdk-cli repl --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)"
 >> sync
 >> list_transactions
 >> get_new_address
@@ -185,26 +185,26 @@ wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SG
 <br>
 
 ## Creating and Syncing a Wallet
-You sync your wallet to the blockchain with the appropriately named `sync` subcommand:
+All wallet operations use the `wallet` subcommand. You sync your wallet to the blockchain with the appropriately named `sync` subcommand:
 ```sh
-bdk-cli --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync  
+bdk-cli wallet --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync  
 ```
 
-The moment you give `bdk-cli` a descriptor, it creates a entry for you in a small [`sled`]() database located at `~/.bdk-bitcoin/` on your machine. This wallet does not actually contain the descriptor (hence the need to provide it at every command) but does keep track of a few things for you that make it convenient. Note that you can delete this database at any time without loosing anything that cannot be rebuilt by syncing back up.
+When we give `bdk-cli` a descriptor, it creates a entry for us in a small [`sled`]() database located at `~/.bdk-bitcoin/` on our machine. This wallet does not actually contain the descriptor (hence the need to provide it at every command) but does keep track of a few things for you that make it convenient. Note that you can delete this database at any time without loosing anything that cannot be rebuilt by syncing back up.
 
 This sort of "cache" has a default name of _main_, and if you try and give bdk a new command but with a different descriptor (say you want to test with multiple wallets at once), it will throw an error, since the new descriptor will not match the currently existing 'main' wallet in the database.
 
 The way to play with multiple wallets at once is to name them as they are being created and used. The command above could be modified like so:
 
 ```sh
-bdk-cli --wallet "testwalletnumber1" --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync  
+bdk-cli wallet --wallet "testwalletnumber1" --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync  
 ```
 which will create a wallet called `testwalletnumber1` in the database. If you are dealing with multiple wallets, you must provide the `--wallet` option every time, unless you wish to use the default wallet.  
 <br>
 
 ## Receiving coins
 ```sh
-bdk-cli --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" repl  
+bdk-cli wallet --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" repl  
 
 >> get_new_address
 {
@@ -237,7 +237,7 @@ The `create_tx` subcommand requires the `--to` flag with an argument in the form
 The example below performs that transaction using the repl. Note that when providing the psbts to the repl we do not enclose the psbt in quotation marks, whereas if we perform these commands using the normal cli we do need to put the psbts in quotes.
 
 ```sh
-bdk-cli --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" repl
+bdk-cli repl --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)"
 
 >> create_tx --to tb1qjpfm4vz5w2l0hzp2t0fd8esguxe08pntgv79vl:3232
 {
