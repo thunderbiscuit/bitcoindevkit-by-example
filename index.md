@@ -6,8 +6,7 @@ description: "Bitcoindevkit by example"
 permalink: /
 ---
 
-<br/>
-<div style="display: flex; justify-content: space-evenly;">
+<div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <img src="./img/bitcoindevkit-logo.svg" width="200">
   
   <div style="display: flex; align-items: center; justify-content: center;">
