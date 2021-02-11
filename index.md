@@ -298,6 +298,11 @@ AuILAAAAAAAAFgAUR/J8qBUWz+VI4IPMZf9h4V2LbWmgDAAAAAAAABYAFJBTurBUcr77iCpb0tPmCOGy
   "txid": "f6ef8179b7612a272205bd152d8e833b6b9ced11aedbb2678eb9ba211157bb12"
 }
 ```
+<br/>
+
+## Contributing
+If you think this section could use a fix or additional content, we'd love to hear about it! Feel free to open an issue or a pull request [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
+<br/>
 
 <h1 style="margin-bottom: 0">
   bdk-jni
@@ -305,7 +310,7 @@ AuILAAAAAAAAFgAUR/J8qBUWz+VI4IPMZf9h4V2LbWmgDAAAAAAAABYAFJBTurBUcr77iCpb0tPmCOGy
 <p style="margin-top: 0">
   <em>v0.1.0</em>
 </p>
-This section is under construction!
+This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 <br/>
 
 <h1 style="margin-bottom: 0">
@@ -314,7 +319,9 @@ This section is under construction!
 <p style="margin-top: 0">
   <em>v0.3.0</em>
 </p>
-This section is under construction!
+This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
+<br/>
+
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
