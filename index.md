@@ -52,7 +52,7 @@ By cloning the repo, building the library, and calling the resulting executable 
 
 ```sh
 git clone https://github.com/bitcoindevkit/bdk-cli.git
-cargo run -- wallet --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync
+cargo run -- wallet --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYLCGco1VyjB9tvvuvYtfZzjD5A8igzgw3HeWeeKFmanHYqksqZXYXGsw5zjnj7KM9/*)" sync  
 ```
 The first set of double dashes indicates to cargo that what follows are arguments to send to the executable.  
 
@@ -304,12 +304,29 @@ AuILAAAAAAAAFgAUR/J8qBUWz+VI4IPMZf9h4V2LbWmgDAAAAAAAABYAFJBTurBUcr77iCpb0tPmCOGy
 If you think this section could use a fix or additional content, we'd love to hear about it! Feel free to open an issue or a pull request [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 <br/>
 
-<h1 style="margin-bottom: 0">
+<hr/>
+<div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
+  <img src="./img/android.svg" width="200">
+  
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <div>
+      <h1>
+        bdk-jni
+      </h1>
+      <p style="margin-top: 0">
+        <em>v0.1.0</em>
+      </p>
+    </div>
+  </div>
+</div>
+<hr/>
+
+<!-- <h1 style="margin-bottom: 0">
   bdk-jni
 </h1>
 <p style="margin-top: 0">
   <em>v0.1.0</em>
-</p>
+</p> -->
 This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 <br/>
 
