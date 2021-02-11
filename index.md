@@ -41,7 +41,7 @@ permalink: /
   bdk-cli
 </h1>
 <p style="margin-top: 0">
-  v0.1.0
+  <em>v0.1.0</em>
 </p>
 
 ## Getting Started
@@ -150,36 +150,13 @@ bdk-cli key restore --help
 
 ## Map of Subcommands
 The whole tree of subcommands for bdk-cli can be mapped like so:
-```sh
-bdk-cli ---| help
-           |
-           | repl
-           |
-           | key -----| generate
-           |          | restore
-           |
-           | wallet --| broadcast
-           |          | bump_fee
-           |          | combine_psbt
-           |          | create_tx
-           |          | extract_psbt
-           |          | finalize_psbt
-           |          | get_balance
-           |          | get_new_address
-           |          | list_transactions
-           |          | list_unspent
-           |          | policies
-           |          | public_descriptor
-           |          | sign
-           |          | sync
-```
 
-```sh
-bdk-cli -->| help
+```txt
+bdk-cli ---| help
            | repl
-           | key    -->| generate
+           | key ------| generate
                        | restore
-           | wallet -->| broadcast
+           | wallet ---| broadcast
                        | bump_fee
                        | combine_psbt
                        | create_tx
@@ -325,7 +302,7 @@ AuILAAAAAAAAFgAUR/J8qBUWz+VI4IPMZf9h4V2LbWmgDAAAAAAAABYAFJBTurBUcr77iCpb0tPmCOGy
   bdk-jni
 </h1>
 <p style="margin-top: 0">
-  v0.1.0
+  <em>v0.1.0</em>
 </p>
 This section is under construction!
 <br/>
@@ -334,7 +311,7 @@ This section is under construction!
   bdk
 </h1>
 <p style="margin-top: 0">
-  v0.3.0
+  <em>v0.3.0</em>
 </p>
 This section is under construction!
 
