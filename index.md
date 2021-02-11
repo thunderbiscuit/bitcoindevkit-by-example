@@ -49,12 +49,12 @@ permalink: /
       <h1>
         bdk-cli
       </h1>
-      <p style="margin-top: 0">
+      <p style="margin: 0 0 0.5em 0">
         <em>v0.1.0</em>
       </p>
       <a href="https://github.com/bitcoindevkit/bdk-cli">
-        <h4 style="margin-top: 0">
-          Source
+        <h4>
+          <em>Source</em>
         </h4>
       </a>
     </div>
@@ -340,9 +340,14 @@ If you think this section could use a fix or additional content, we'd love to he
       <h1>
         bdk-jni
       </h1>
-      <p style="margin-top: 0">
+      <p style="margin-top: 0 0 0.5em 0">
         <em>v0.1.0</em>
       </p>
+      <a href="https://github.com/bitcoindevkit/bdk-jni">
+        <h4>
+          <em>Source</em>
+        </h4>
+      </a>
     </div>
   </div>
 </div>
@@ -375,9 +380,14 @@ This section is under construction! Feel free to open a PR [here](https://github
       <h1>
         bdk
       </h1>
-      <p style="margin-top: 0">
+      <p style="margin-top: 0 0 0.5em 0">
         <em>v0.3.0</em>
       </p>
+      <a href="https://github.com/bitcoindevkit/bdk">
+        <h4>
+          <em>Source</em>
+        </h4>
+      </a>
     </div>
   </div>
 </div>
