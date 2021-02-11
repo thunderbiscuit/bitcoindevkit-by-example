@@ -7,7 +7,9 @@ permalink: /
 ---
 
 <p style="text-align: right; height: 0px">
-  <button class="btn js-toggle-dark-mode" style="position: relative; top: -3rem">Come to the dark side</button>
+  <button class="btn js-toggle-dark-mode" style="position: relative; top: -6rem">
+    Come to the dark side
+  </button>
 </p>
 
 <div style="display: flex; justify-content: space-evenly;">
@@ -24,7 +26,8 @@ permalink: /
     </div>
   </div>
 </div>
-
+<br/>
+<br/>
 <div style="display: flex; justify-content: space-evenly;">
   <a href="#bdk-cli">
     <h4>bdk-cli</h4>
@@ -36,8 +39,6 @@ permalink: /
     <h4>bdk-jni</h4>
   </a>
 </div>
-
-<br/>
 <hr/>
 
 # bdk-cli
