@@ -151,7 +151,7 @@ bdk-cli key restore --help
 ## Map of Subcommands
 The whole tree of subcommands for bdk-cli can be mapped like so:
 
-```txt
+```shell
 bdk-cli ---| help
            | repl
            | key ------| generate
@@ -171,6 +171,7 @@ bdk-cli ---| help
                        | sign
                        | sync
 ```
+<br/>
 
 ## Generating New Keys
 Generate a new extended master key suitable for using in a descriptor with
