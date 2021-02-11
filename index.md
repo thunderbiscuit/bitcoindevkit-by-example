@@ -6,11 +6,11 @@ description: "Bitcoindevkit by example"
 permalink: /
 ---
 
-<p style="text-align: right; height: 0px">
+<!-- <p style="text-align: right; height: 0px">
   <button class="btn js-toggle-dark-mode" style="position: relative; top: -6rem">
     Come to the dark side
   </button>
-</p>
+</p> -->
 
 <div style="display: flex; justify-content: space-evenly;">
   <img src="./img/bitcoindevkit-logo.svg" width="200">
@@ -23,6 +23,9 @@ permalink: /
       <p>
         Exploring the bitcoindevkit ecosystem through a series of examples
       </p>
+      <button class="btn js-toggle-dark-mode">
+        Come to the dark side
+      </button>
     </div>
   </div>
 </div>
