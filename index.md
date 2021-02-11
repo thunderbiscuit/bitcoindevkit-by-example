@@ -37,12 +37,31 @@ permalink: /
 </div>
 <hr/>
 
-<h1 style="margin-bottom: 0">
+<br/>
+<br/>
+
+<div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
+  <img src="./img/bash.svg" width="200">
+  
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <div>
+      <h1>
+        bdk-cli
+      </h1>
+      <p style="margin-top: 0">
+        <em>v0.1.0</em>
+      </p>
+    </div>
+  </div>
+</div>
+<hr/>
+
+<!-- <h1 style="margin-bottom: 0">
   bdk-cli
 </h1>
 <p style="margin-top: 0">
   <em>v0.1.0</em>
-</p>
+</p> -->
 
 ## Getting Started
 There are a few ways to use `bdk-cli`:
