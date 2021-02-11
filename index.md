@@ -62,13 +62,6 @@ permalink: /
 </div>
 <hr/>
 
-<!-- <h1 style="margin-bottom: 0">
-  bdk-cli
-</h1>
-<p style="margin-top: 0">
-  <em>v0.1.0</em>
-</p> -->
-
 ## Getting Started
 There are a few ways to use `bdk-cli`:
 
@@ -330,6 +323,7 @@ If you think this section could use a fix or additional content, we'd love to he
 
 <br/>
 <br/>
+<br/>
 
 <hr id="bdk-jni-section" />
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
@@ -340,7 +334,7 @@ If you think this section could use a fix or additional content, we'd love to he
       <h1>
         bdk-jni
       </h1>
-      <p style="margin-top: 0 0 0.5em 0">
+      <p style="margin: 0 0 0.5em 0">
         <em>v0.1.0</em>
       </p>
       <a href="https://github.com/bitcoindevkit/bdk-jni">
@@ -353,22 +347,9 @@ If you think this section could use a fix or additional content, we'd love to he
 </div>
 <hr/>
 
-<!-- <h1 style="margin-bottom: 0">
-  bdk-jni
-</h1>
-<p style="margin-top: 0">
-  <em>v0.1.0</em>
-</p> -->
 This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
+
 <br/>
-
-<!-- <h1 style="margin-bottom: 0">
-  bdk
-</h1>
-<p style="margin-top: 0">
-  <em>v0.3.0</em>
-</p> -->
-
 <br/>
 <br/>
 <hr id="bdk-section"/>
@@ -380,7 +361,7 @@ This section is under construction! Feel free to open a PR [here](https://github
       <h1>
         bdk
       </h1>
-      <p style="margin-top: 0 0 0.5em 0">
+      <p style="margin: 0 0 0.5em 0">
         <em>v0.3.0</em>
       </p>
       <a href="https://github.com/bitcoindevkit/bdk">
@@ -395,6 +376,7 @@ This section is under construction! Feel free to open a PR [here](https://github
 
 This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 <br/>
+
 
 
 <script>
