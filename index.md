@@ -113,23 +113,6 @@ bdk-cli --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)" repl
 ```
 <br>
 
-## Example Wallet
-The examples below make use of the following _testnet_ BIP84 wallet:
-```
-damage urban exercise recipe company execute ship damage offer point cereal exclude
-```
-
-Using [Ian Coleman's online tool](https://iancoleman.io/bip39/), we find that the BIP32 root key associated with the mnemonic backup is
-```
-tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF
-```
-
-This means the descriptor for a BIP84 bitcoin testnet, account 0, series of receive addresses would be:
-```sh
-wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
-```
-<br>
-
 ## Using the Manual Pages (help)
 You can get information about how to use `bdk-cli` by using
 ```sh
@@ -154,6 +137,50 @@ or by using the `--help` or `-h` flag on any command and subcommand:
 ```sh
 bdk-cli key --help
 bdk-cli key restore --help
+```
+<br>
+
+## Generating New Keys
+Generate a new extended master key suitable for using in a descriptor with
+```sh
+bdk-cli key generate --entropy 12
+{
+  "fingerprint": "2a0e129d",
+  "mnemonic": "vocal fantasy gap lumber guess broom gate creek game coral rice flock",
+  "xprv": "tprv8ZgxMBicQKsPedUmFPeHeJWa1C4rQFpUZzwU1QhgSCoZtzqFACQXT5Li8NQLRH1syNVi3iZi5PUUGkTDGXV1CUpeusLxf77Xzm969Ur8uy5",
+  "xpub": "tpubD6NzVbkrYhZ4Y6WZ93Jt3iAgaDanZb1P9JYFHvjyrUbxjV61nbE7dZxaJYHYK29MrpLJKc7uKo1gTUhTHni21sgh4mT5p2Qs6pRXoXFFWzY"
+}
+```
+
+This `xprv` master key can then be used to derive common BIP 39/44/84 wallets. For example the BIP84 receive and change wallet descriptors would be the following:
+```sh
+# receive wallet
+wpkh(tprv8ZgxMBicQKsPedUmFPeHeJWa1C4rQFpUZzwU1QhgSCoZtzqFACQXT5Li8NQLRH1syNVi3iZi5PUUGkTDGXV1CUpeusLxf77Xzm969Ur8uy5/84'/1'/0'/0/*)  
+
+# change wallet
+wpkh(tprv8ZgxMBicQKsPedUmFPeHeJWa1C4rQFpUZzwU1QhgSCoZtzqFACQXT5Li8NQLRH1syNVi3iZi5PUUGkTDGXV1CUpeusLxf77Xzm969Ur8uy5/84'/1'/0'/1/*)  
+```
+
+You can restore keys from a mnemonic using the `restore` subcommand:
+```sh
+bdk-cli key restore --mnemonic "vocal fantasy gap lumber guess broom gate creek game coral rice flock"
+```
+<br/>
+
+## Example Wallet
+The examples below make use of the following _testnet_ BIP84 wallet:
+```
+damage urban exercise recipe company execute ship damage offer point cereal exclude
+```
+
+Using the `restore` command, we find that the `xprv` for the wallet is
+```
+tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF
+```
+
+This means the descriptor for a BIP84 bitcoin testnet, account 0, series of receive addresses is:
+```sh
+wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
 ```
 <br>
 
