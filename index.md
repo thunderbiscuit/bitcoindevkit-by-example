@@ -52,6 +52,11 @@ permalink: /
       <p style="margin-top: 0">
         <em>v0.1.0</em>
       </p>
+      <a href="https://github.com/bitcoindevkit/bdk-cli">
+        <h4 style="margin-top: 0">
+          Source
+        </h4>
+      </a>
     </div>
   </div>
 </div>
