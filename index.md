@@ -25,7 +25,7 @@ permalink: /
 </div>
 <br/>
 <div style="display: flex; justify-content: space-evenly;">
-  <a href="#bdk-cli">
+  <a href="#bdk-cli-section">
     <h4>bdk-cli</h4>
   </a>
   <a href="#bdk-jni">
@@ -40,7 +40,8 @@ permalink: /
 <br/>
 <br/>
 
-<div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
+<hr/>
+<div id="bdk-cli-section" style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <img src="./img/bash.svg" width="200">
   
   <div style="display: flex; align-items: center; justify-content: center;">
