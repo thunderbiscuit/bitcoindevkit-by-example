@@ -28,10 +28,10 @@ permalink: /
   <a href="#bdk-cli-section">
     <h4>bdk-cli</h4>
   </a>
-  <a href="#bdk-jni">
+  <a href="#bdk-jni-section">
     <h4>bdk</h4>
   </a>
-  <a href="#bdk">
+  <a href="#bdk-section">
     <h4>bdk-jni</h4>
   </a>
 </div>
@@ -40,8 +40,8 @@ permalink: /
 <br/>
 <br/>
 
-<hr/>
-<div id="bdk-cli-section" style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
+<hr id="bdk-cli-section" />
+<div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <img src="./img/bash.svg" width="200">
   
   <div style="display: flex; align-items: center; justify-content: center;">
@@ -326,7 +326,7 @@ If you think this section could use a fix or additional content, we'd love to he
 <br/>
 <br/>
 
-<hr/>
+<hr id="bdk-jni-section" />
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <img src="./img/android.svg" width="200">
   
@@ -361,7 +361,7 @@ This section is under construction! Feel free to open a PR [here](https://github
 
 <br/>
 <br/>
-<hr/>
+<hr id="bdk-section"/>
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <img src="./img/rust.svg" width="200">
   
