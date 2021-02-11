@@ -332,12 +332,32 @@ If you think this section could use a fix or additional content, we'd love to he
 This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 <br/>
 
-<h1 style="margin-bottom: 0">
+<!-- <h1 style="margin-bottom: 0">
   bdk
 </h1>
 <p style="margin-top: 0">
   <em>v0.3.0</em>
-</p>
+</p> -->
+
+<br/>
+<br/>
+<hr/>
+<div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
+  <img src="./img/rust.svg" width="200">
+  
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <div>
+      <h1>
+        bdk
+      </h1>
+      <p style="margin-top: 0">
+        <em>v0.3.0</em>
+      </p>
+    </div>
+  </div>
+</div>
+<hr/>
+
 This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 <br/>
 
