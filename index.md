@@ -6,12 +6,7 @@ description: "Bitcoindevkit by example"
 permalink: /
 ---
 
-<!-- <p style="text-align: right; height: 0px">
-  <button class="btn js-toggle-dark-mode" style="position: relative; top: -6rem">
-    Come to the dark side
-  </button>
-</p> -->
-
+<br/>
 <div style="display: flex; justify-content: space-evenly;">
   <img src="./img/bitcoindevkit-logo.svg" width="200">
   
@@ -29,7 +24,6 @@ permalink: /
     </div>
   </div>
 </div>
-<br/>
 <br/>
 <div style="display: flex; justify-content: space-evenly;">
   <a href="#bdk-cli">
