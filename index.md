@@ -6,19 +6,24 @@ description: "Bitcoindevkit by example"
 permalink: /
 ---
 
-# Bitcoindevkit by Example 😎
-
 <p style="text-align: right; height: 0px">
   <button class="btn js-toggle-dark-mode" style="position: relative; top: -3rem">Come to the dark side</button>
 </p>
 
-Exploring the bitcoindevkit ecosystem through a series of examples.
-
-<br/>
-<center>
-<img src="./img/bitcoindevkit-logo.svg" width="200">
-</center>
-<br/>
+<div style="display: flex; justify-content: space-evenly;">
+  <img src="./img/bitcoindevkit-logo.svg" width="200">
+  
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <div>
+      <h1>
+        Bitcoindevkit by Example
+      </h1>
+      <p>
+        Exploring the bitcoindevkit ecosystem through a series of examples
+      </p>
+    </div>
+  </div>
+</div>
 
 <div style="display: flex; justify-content: space-evenly;">
   <a href="#bdk-cli">
@@ -31,6 +36,7 @@ Exploring the bitcoindevkit ecosystem through a series of examples.
     <h4>bdk-jni</h4>
   </a>
 </div>
+
 <br/>
 <hr/>
 
