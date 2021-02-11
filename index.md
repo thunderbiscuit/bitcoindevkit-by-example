@@ -48,6 +48,11 @@ cargo run -- --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYL
 ```
 The first set of double dashes indicates to cargo that what follows are arguments to send to the executable.  
 
+You can keep using bdk-cli this way (with `cargo run`), or you build from source and install the binaries so as to be able to use `bdk-cli` directly (as in #2 below). To build/install, use 
+```sh
+cargo install --path . --features repl,electrum,esplora
+```
+
 ### 2. Installing the binary directly from crates.io
 By installing the binaries directly from crates.io and calling the cli like so:
 
@@ -135,13 +140,20 @@ bdk-cli --help
 >> help
 ```
 
-You can also get additional information on specific subcommands by adding it to the `help` subcommand: 
+You can also get additional information on specific commands and subcommands by adding them to the `help` subcommand like so: 
 ```sh
 # cli
 bdk-cli help list_transactions
+bdk-cli help key generate
 
 # repl
 >> help list_transactions
+```
+
+or by using the `--help` or `-h` flag on any command and subcommand:
+```sh
+bdk-cli key --help
+bdk-cli key restore --help
 ```
 <br>
 
