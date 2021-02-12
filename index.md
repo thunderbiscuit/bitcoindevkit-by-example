@@ -1,7 +1,10 @@
 ---
 layout: default
 title: "Bitcoindevkit by Example"
-image: /img/bitcoindevkit-logo.svg
+image: 
+  path: /img/bitcoindevkit-logo.svg
+  height: 100
+  width: 100
 nav_order: 1
 description: "Exploring the bitcoindevkit through a series of examples"
 permalink: /

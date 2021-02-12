@@ -2,6 +2,7 @@
 remote_theme: "thunderbiscuit/just-the-docs"
 title: "Bitcoindevkit by Example"
 exclude: README.md
+description: "Exploring the bitcoindevkit through a series of examples"
 
 search_enabled: true
 search:
