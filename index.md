@@ -136,7 +136,6 @@ bdk-cli repl --descriptor "wpkh(tprv8Z...fQtF/84'/1'/0'/0/*)"
 >> list_transactions
 >> get_new_address
 ```
-<br>
 
 ## Using the Manual Pages (help)
 You can get information about how to use `bdk-cli` by using
@@ -163,7 +162,6 @@ or by using the `--help` or `-h` flag on any command and subcommand:
 bdk-cli key --help
 bdk-cli key restore --help
 ```
-<br>
 
 ## Map of Subcommands
 The whole tree of subcommands for bdk-cli can be mapped like so:
@@ -188,7 +186,6 @@ bdk-cli ---| help
                        | sign
                        | sync
 ```
-<br/>
 
 ## Generating New Keys
 Generate a new extended master key suitable for using in a descriptor with
@@ -215,7 +212,6 @@ You can restore keys from a mnemonic using the `restore` subcommand:
 ```sh
 bdk-cli key restore --mnemonic "vocal fantasy gap lumber guess broom gate creek game coral rice flock"
 ```
-<br/>
 
 ## Example Wallet
 The examples below make use of the following _testnet_ BIP84 wallet:
@@ -232,7 +228,6 @@ This means the descriptor for a BIP84 bitcoin testnet, account 0, series of rece
 ```sh
 wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)
 ```
-<br>
 
 ## Creating and Syncing a Wallet
 All wallet operations use the `wallet` subcommand. You sync your wallet to the blockchain with the appropriately named `sync` subcommand:
@@ -250,7 +245,6 @@ The way to play with multiple wallets at once is to name them as they are being 
 bdk-cli wallet --wallet "testwalletnumber1" --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)" sync  
 ```
 which will create a wallet called `testwalletnumber1` in the database. If you are dealing with multiple wallets, you must provide the `--wallet` option every time, unless you wish to use the default wallet.  
-<br>
 
 ## Receiving coins
 ```sh
@@ -274,7 +268,6 @@ bdk-cli wallet --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayef
   }
 ]
 ```
-<br>
 
 ## Sending coins
 A simple send transaction is done using the following steps:
@@ -315,16 +308,11 @@ AuILAAAAAAAAFgAUR/J8qBUWz+VI4IPMZf9h4V2LbWmgDAAAAAAAABYAFJBTurBUcr77iCpb0tPmCOGy
   "txid": "f6ef8179b7612a272205bd152d8e833b6b9ced11aedbb2678eb9ba211157bb12"
 }
 ```
-<br/>
 
 ## Contributing
 If you think this section could use a fix or additional content, we'd love to hear about it! Feel free to open an issue or a pull request [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 
-<br/>
-<br/>
-<br/>
-
-<hr id="bdk-jni-section" />
+<hr id="bdk-jni-section" style="margin-top: 25vh;"/>
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <img src="./img/android.svg" width="200">
   
@@ -348,10 +336,7 @@ If you think this section could use a fix or additional content, we'd love to he
 
 This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 
-<br/>
-<br/>
-<br/>
-<hr id="bdk-section"/>
+<hr id="bdk-section" style="margin-top: 25vh;"/>
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <img src="./img/rust.svg" width="200">
   
