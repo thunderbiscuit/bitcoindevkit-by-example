@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Bitcoindevkit by example"
+title: "Bitcoindevkit by Example"
 image: /img/bitcoindevkit-logo.svg
 nav_order: 1
-description: "Bitcoindevkit by example"
+description: "Exploring the bitcoindevkit through a series of examples"
 permalink: /
 ---
 

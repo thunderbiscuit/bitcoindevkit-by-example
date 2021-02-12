@@ -30,3 +30,6 @@ search:
 
 # Enable or disable heading anchors
 heading_anchors: true
+
+# Meta tags
+logo: /img/bitcoindevkit-logo.svg
