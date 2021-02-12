@@ -120,7 +120,6 @@ bdk-cli repl --descriptor "wpkh(tpubEBr4i6yk5nf5DAaJpsi9N2pPYBeJ7fZ5Z9rmN4977iYL
   "address": "tb1q4er7kxx6sssz3q7qp7zsqsdx4erceahhax77d7"
 }
 ```
-<br>
 
 ## Basic Workflow
 The basic workflow of `bdk-cli` looks like this: 
