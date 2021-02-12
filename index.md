@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Bitcoindevkit by example"
+image: /img/bitcoindevkit-logo.svg
 nav_order: 1
 description: "Bitcoindevkit by example"
 permalink: /
