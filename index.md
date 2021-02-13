@@ -66,18 +66,21 @@ permalink: /
 </div>
 <hr/>
 
-<br/>
 <h4>
   Contents
 </h4>
 <ol>
-  <li><a>Getting Started</a></li>
-  <li><a>Basic Workflow</a></li>
-  <li><a>Using the Man Pages</a></li>
-  <li><a>Map of Subcommands</a></li>
-  <li><a>Generating New Keys</a></li>
+  <li><a href="#getting-started">Getting Started</a></li>
+  <li><a href="#basic-workflow">Basic Workflow</a></li>
+  <li><a href="#using-the-manual-pages-help">Using the Man Pages</a></li>
+  <li><a href="#map-of-subcommands">Map of Subcommands</a></li>
+  <li><a href="#generating-new-keys">Generating New Keys</a></li>
+  <li><a href="#example-wallet">Example Wallet</a></li>
+  <li><a href="#creating-and-syncing-a-wallet">Creating and Syncing a Wallet</a></li>
+  <li><a href="#receiving-coins">Receiving Coins</a></li>
+  <li><a href="#sending-coins">Sending Coins</a></li>
+  <li><a href="#contributing">Contributing</a></li>
 </ol>
-<br/>
 
 ## Getting Started
 There are a few ways to use `bdk-cli`:
