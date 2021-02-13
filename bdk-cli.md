@@ -32,6 +32,7 @@ permalink: /bdk-cli
 <br/>
 <hr/>
 
+<center>
 <h4>
   Contents
 </h4>
@@ -47,6 +48,7 @@ permalink: /bdk-cli
   <li><a href="#sending-coins">Sending Coins</a></li>
   <li><a href="#contributing">Contributing</a></li>
 </ol>
+</center>
 
 ## Getting Started
 There are a few ways to use `bdk-cli`:
