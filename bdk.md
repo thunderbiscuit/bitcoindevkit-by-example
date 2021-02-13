@@ -29,6 +29,8 @@ permalink: /bdk
     </div>
   </div>
 </div>
+
+<br/>
 <hr/>
 
 This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).

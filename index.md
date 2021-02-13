@@ -29,13 +29,13 @@ permalink: /
 </div>
 <br/>
 <div style="display: flex; justify-content: space-evenly;">
-  <a href="/bdk-cli">
+  <a href="/bitcoindevkit-by-example/bdk-cli">
     <h4>bdk-cli</h4>
   </a>
-  <a href="/bdk-jni">
+  <a href="/bitcoindevkit-by-example/bdk">
     <h4>bdk</h4>
   </a>
-  <a href="/bdk">
+  <a href="/bitcoindevkit-by-example/bdk-jni">
     <h4>bdk-jni</h4>
   </a>
 </div>

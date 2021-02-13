@@ -30,6 +30,7 @@ permalink: /bdk-cli
   </div>
 </div>
 <br/>
+<hr/>
 
 <h4>
   Contents
