@@ -31,11 +31,12 @@ permalink: /bdk-cli
 </div>
 <br/>
 <hr/>
+<br/>
 
 <center>
-<h4>
+<!-- <h4>
   Contents
-</h4>
+</h4> -->
 <ol>
   <li><a href="#getting-started">Getting Started</a></li>
   <li><a href="#basic-workflow">Basic Workflow</a></li>
