@@ -54,7 +54,7 @@ permalink: /
         bdk-cli
       </h1>
       <p style="margin: 0 0 0.5em 0">
-        <em>v0.1.0</em>
+        <em>v0.1.1</em>
       </p>
       <a href="https://github.com/bitcoindevkit/bdk-cli">
         <h4>
@@ -65,6 +65,19 @@ permalink: /
   </div>
 </div>
 <hr/>
+
+<br/>
+<h4>
+  Contents
+</h4>
+<ol>
+  <li><a>Getting Started</a></li>
+  <li><a>Basic Workflow</a></li>
+  <li><a>Using the Man Pages</a></li>
+  <li><a>Map of Subcommands</a></li>
+  <li><a>Generating New Keys</a></li>
+</ol>
+<br/>
 
 ## Getting Started
 There are a few ways to use `bdk-cli`:
