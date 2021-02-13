@@ -43,7 +43,7 @@ permalink: /
   </a>
   <a href="/bitcoindevkit-by-example/bdk-jni"
      style="display: flex; flex-direction: column; align-items: center;">
-    <img src="./img/android.svg" width="40">
+    <img src="./img/android-icon.svg" width="40">
     <h4 style="margin-top: 1.5em; font-size: 14px !important">bdk-jni</h4>
   </a>
 </div>
