@@ -10,7 +10,7 @@ description: "Exploring the bitcoindevkit through a series of examples"
 permalink: /
 ---
 
-<div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
+<div style="display: flex; justify-content: space-evenly; margin-top: 2rem;">
   <img src="./img/bitcoindevkit.svg" width="200">
   
   <div style="display: flex; align-items: center; justify-content: center;">
@@ -43,13 +43,11 @@ permalink: /
   </a>
   <a href="/bitcoindevkit-by-example/bdk-jni"
      style="display: flex; flex-direction: column; align-items: center;">
-    <img src="./img/android-icon.svg" width="40">
+    <img src="./img/android.svg" width="40">
     <h4 style="margin-top: 1.5em; font-size: 14px !important">bdk-jni</h4>
   </a>
 </div>
-
 <br/>
-<hr/>
 
 
 <script>
