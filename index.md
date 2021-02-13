@@ -21,9 +21,9 @@ permalink: /
       <p>
         Exploring the bitcoindevkit ecosystem through a series of examples
       </p>
-      <button class="btn js-toggle-dark-mode">
+      <!-- <button class="btn js-toggle-dark-mode">
         Come to the dark side
-      </button>
+      </button> -->
     </div>
   </div>
 </div>
@@ -50,7 +50,7 @@ permalink: /
 <br/>
 
 
-<script>
+<!-- <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
 jtd.addEvent(toggleDarkMode, 'click', function(){
@@ -62,4 +62,4 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
     toggleDarkMode.textContent = 'Return to the light side';
   }
 });
-</script>
+</script> -->
