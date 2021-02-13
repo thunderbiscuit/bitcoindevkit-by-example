@@ -1,46 +1,37 @@
 ---
 layout: default
-title: "Bitcoindevkit by Example"
+title: "bdk-jni"
 image: 
-  path: img/bitcoindevkit.png
+  path: img/bitcoindevkit.svg
   height: 100
   width: 100
-nav_order: 1
+nav_order: 2
 description: "Exploring the bitcoindevkit through a series of examples"
-permalink: /
+permalink: /bdk-jni
 ---
 
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
-  <img src="./img/bitcoindevkit.svg" width="200">
+  <img src="./img/android.svg" width="200">
   
   <div style="display: flex; align-items: center; justify-content: center;">
     <div>
       <h1>
-        Bitcoindevkit by Example
+        bdk-jni
       </h1>
-      <p>
-        Exploring the bitcoindevkit ecosystem through a series of examples
+      <p style="margin: 0 0 0.5em 0">
+        <em>v0.1.0</em>
       </p>
-      <button class="btn js-toggle-dark-mode">
-        Come to the dark side
-      </button>
+      <a href="https://github.com/bitcoindevkit/bdk-jni">
+        <h4>
+          <em>Source</em>
+        </h4>
+      </a>
     </div>
   </div>
 </div>
-<br/>
-<div style="display: flex; justify-content: space-evenly;">
-  <a href="/bdk-cli">
-    <h4>bdk-cli</h4>
-  </a>
-  <a href="/bdk-jni">
-    <h4>bdk</h4>
-  </a>
-  <a href="/bdk">
-    <h4>bdk-jni</h4>
-  </a>
-</div>
 <hr/>
 
+This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
