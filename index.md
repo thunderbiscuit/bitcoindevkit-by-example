@@ -30,12 +30,15 @@ permalink: /
 <br/>
 <div style="display: flex; justify-content: space-evenly;">
   <a href="/bitcoindevkit-by-example/bdk-cli">
+    <img src="/img/bash.svg" width="40">
     <h4>bdk-cli</h4>
   </a>
   <a href="/bitcoindevkit-by-example/bdk">
+    <img src="/img/rust.svg" width="40">
     <h4>bdk</h4>
   </a>
   <a href="/bitcoindevkit-by-example/bdk-jni">
+    <img src="/img/android.svg" width="40">
     <h4>bdk-jni</h4>
   </a>
 </div>
