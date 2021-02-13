@@ -28,20 +28,27 @@ permalink: /
   </div>
 </div>
 <br/>
+<br/>
+<br/>
 <div style="display: flex; justify-content: space-evenly;">
-  <a href="/bitcoindevkit-by-example/bdk-cli">
-    <img src="/img/bash.svg" width="40">
-    <h4>bdk-cli</h4>
+  <a href="/bitcoindevkit-by-example/bdk-cli" 
+     style="display: flex; flex-direction: column; align-items: center;">
+    <img src="./img/bash.svg" width="40">
+    <h4 style="margin-top: 1em">bdk-cli</h4>
   </a>
-  <a href="/bitcoindevkit-by-example/bdk">
-    <img src="/img/rust.svg" width="40">
-    <h4>bdk</h4>
+  <a href="/bitcoindevkit-by-example/bdk"
+     style="display: flex; flex-direction: column; align-items: center;">
+    <img src="./img/rust.svg" width="40">
+    <h4 style="margin-top: 1em">bdk</h4>
   </a>
-  <a href="/bitcoindevkit-by-example/bdk-jni">
-    <img src="/img/android.svg" width="40">
-    <h4>bdk-jni</h4>
+  <a href="/bitcoindevkit-by-example/bdk-jni"
+     style="display: flex; flex-direction: column; align-items: center;">
+    <img src="./img/android.svg" width="40">
+    <h4 style="margin-top: 1em">bdk-jni</h4>
   </a>
 </div>
+
+<br/>
 <hr/>
 
 
