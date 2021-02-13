@@ -34,17 +34,17 @@ permalink: /
   <a href="/bitcoindevkit-by-example/bdk-cli" 
      style="display: flex; flex-direction: column; align-items: center;">
     <img src="./img/bash.svg" width="40">
-    <h4 style="margin-top: 1em">bdk-cli</h4>
+    <h4 style="margin-top: 1.5em; font-size: 14px !important">bdk-cli</h4>
   </a>
   <a href="/bitcoindevkit-by-example/bdk"
      style="display: flex; flex-direction: column; align-items: center;">
     <img src="./img/rust.svg" width="40">
-    <h4 style="margin-top: 1em">bdk</h4>
+    <h4 style="margin-top: 1.5em; font-size: 14px !important">bdk</h4>
   </a>
   <a href="/bitcoindevkit-by-example/bdk-jni"
      style="display: flex; flex-direction: column; align-items: center;">
     <img src="./img/android.svg" width="40">
-    <h4 style="margin-top: 1em">bdk-jni</h4>
+    <h4 style="margin-top: 1.5em; font-size: 14px !important">bdk-jni</h4>
   </a>
 </div>
 
