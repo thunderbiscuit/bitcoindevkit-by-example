@@ -2,7 +2,7 @@
 layout: default
 title: "Bitcoindevkit by Example"
 image: 
-  path: img/bitcoindevkit.png
+  path: img/png/bdk-ecosystem.png
   height: 100
   width: 100
 nav_order: 1
