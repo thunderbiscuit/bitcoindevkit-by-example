@@ -39,7 +39,7 @@ permalink: /bdk-cli
     <li><a href="#creating-and-syncing-a-wallet">Creating and Syncing a Wallet</a></li>
     <li><a href="#receiving-coins">Receiving Coins</a></li>
     <li><a href="#sending-coins">Sending Coins</a></li>
-    <li><a href="#2-of-2-multisig">Building a 2-of-2 multisig using PSBTs</a></li>
+    <li><a href="#building-a-2-of-2-multisig-transaction-using-psbts">Building a 2-of-2 multisig using PSBTs</a></li>
     <li><a href="#contributing">Contributing</a></li>
   </ol>
 </div>
