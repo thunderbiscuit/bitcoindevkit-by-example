@@ -152,9 +152,12 @@ The whole tree of subcommands for bdk-cli can be mapped like so:
 ```shell
 bdk-cli ---| help
            | repl
-           | key ------| generate
+           | key ------| help
+                       | generate
                        | restore
-           | wallet ---| broadcast
+                       | derive
+           | wallet ---| help
+                       | broadcast
                        | bump_fee
                        | combine_psbt
                        | create_tx
