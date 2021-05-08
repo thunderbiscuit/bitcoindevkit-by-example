@@ -19,7 +19,7 @@ permalink: /bdk-cli
         bdk-cli
       </h1>
       <p style="margin: 0 0 0.5em 0">
-        <em>v0.1.1</em>
+        <em>v0.2.0</em>
       </p>
       <a href="https://github.com/bitcoindevkit/bdk-cli">
         <h4>
