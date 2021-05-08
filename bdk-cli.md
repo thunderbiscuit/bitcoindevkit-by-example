@@ -9,7 +9,7 @@ nav_order: 2
 description: "Exploring the bitcoindevkit through a series of examples"
 permalink: /bdk-cli
 ---
-<button class="btn js-toggle-dark-mode">
+<button class="btn js-toggle-dark-mode" style="position: absolute; top: 20px; right: 0px">
   Come to the dark side
 </button>
 
