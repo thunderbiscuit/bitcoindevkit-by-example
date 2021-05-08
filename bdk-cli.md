@@ -9,10 +9,15 @@ nav_order: 2
 description: "Exploring the bitcoindevkit through a series of examples"
 permalink: /bdk-cli
 ---
+<button class="btn js-toggle-dark-mode">
+  Come to the dark side
+</button>
 
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
+  <!-- logo -->
   <img src="./img/bash.svg" width="200">
   
+  <!-- metadata -->
   <div style="display: flex; align-items: center; justify-content: center;">
     <div>
       <h1>
@@ -29,6 +34,7 @@ permalink: /bdk-cli
     </div>
   </div>
 
+  <!-- table of contents -->
   <ol>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#basic-workflow">Basic Workflow</a></li>
