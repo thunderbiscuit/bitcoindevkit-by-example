@@ -157,7 +157,7 @@ fn main() -> Result<(), bdk::Error> {
 ```
 
 ## Contribute
-If you think this section could use a fix or additional content, we'd love to hear about it! Feel free to open an issue or a pull request [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
+If you think this page could use a fix or some additional content, we'd love to hear about it! Feel free to open an issue or a pull request [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');

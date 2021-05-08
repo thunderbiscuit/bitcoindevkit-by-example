@@ -46,7 +46,7 @@ permalink: /bdk-cli
     <li><a href="#receiving-coins">Receiving Coins</a></li>
     <li><a href="#sending-coins">Sending Coins</a></li>
     <li><a href="#building-a-2-of-2-multisig-transaction-using-psbts">Building a 2-of-2 multisig using PSBTs</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contribute">Contribute</a></li>
   </ol>
 </div>
 <hr/>
@@ -416,8 +416,8 @@ bdk-cli wallet --descriptor "wsh(multi(2,[6926972a/84'/1'/0']tpubDCj3FLoMDHpcfex
 
 That's it! You can see the final transaction [here](https://blockstream.info/testnet/tx/948b6d5220043c1343f5569c35c5b33ab7b6159e9c8da5edd0f160a8c711f25d).
 
-## Contributing
-If you think this section could use a fix or additional content, we'd love to hear about it! Feel free to open an issue or a pull request [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
+## Contribute
+If you think this page could use a fix or some additional content, we'd love to hear about it! Feel free to open an issue or a pull request [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
