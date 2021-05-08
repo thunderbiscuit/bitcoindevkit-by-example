@@ -11,8 +11,11 @@ permalink: /bdk
 ---
 
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
+  
+  <!-- logo -->
   <img src="./img/rust.svg" width="200">
   
+  <!-- metadata -->
   <div style="display: flex; align-items: center; justify-content: center;">
     <div>
       <h1>
@@ -28,8 +31,8 @@ permalink: /bdk
       </a>
     </div>
   </div>
-</div>
 
+  <!-- table of content -->
   <ol>
     <li><a href="#sync-the-balance-of-a-descriptor">Sync Balance of Descriptor</a></li>
     <li><a href="#generate-a-few-addresses">Generate Addresses</a></li>
@@ -37,7 +40,7 @@ permalink: /bdk
     <li><a href="#sign-a-transaction">Sign a Transaction</a></li>
     <li><a href="#contributing">Contribute</a></li>
   </ol>
-<br/>
+</div>
 <hr/>
 
 This section is under construction! Feel free to open a PR [here](https://github.com/thunderbiscuit/bitcoindevkit-by-example).
