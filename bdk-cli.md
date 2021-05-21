@@ -424,11 +424,11 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
-    document.getElementById("cli-logo").src="./img/bash-dark.svg";
+    document.getElementById("cli-logo").src="./img/bash-light.svg";
     jtd.setTheme('light');
     toggleDarkMode.textContent = 'Come to the dark side';
   } else {
-    document.getElementById("cli-logo").src="./img/bash.svg";
+    document.getElementById("cli-logo").src="./img/bash-dark.svg";
     jtd.setTheme('dark');
     toggleDarkMode.textContent = 'Return to the light side';
   }
