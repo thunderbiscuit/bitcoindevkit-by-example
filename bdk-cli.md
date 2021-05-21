@@ -15,7 +15,7 @@ permalink: /bdk-cli
 
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <!-- logo -->
-  <img src="./img/bash.svg" width="200">
+  <img id="cli-logo" src="./img/bash-light.svg" width="200">
   
   <!-- metadata -->
   <div style="display: flex; align-items: center; justify-content: center;">
@@ -424,9 +424,11 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
+    document.getElementById("cli-logo").src="./img/bash-dark.svg";
     jtd.setTheme('light');
     toggleDarkMode.textContent = 'Come to the dark side';
   } else {
+    document.getElementById("cli-logo").src="./img/bash.svg";
     jtd.setTheme('dark');
     toggleDarkMode.textContent = 'Return to the light side';
   }
