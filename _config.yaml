@@ -1,8 +1,7 @@
-# remote_theme: "pmarsceill/just-the-docs"
-# theme: "just-the-docs"
-remote_theme: "thunderbiscuit/just-the-docs"
-title: "Bitcoindevkit by Example"
-exclude: ["README.md"]
+remote_theme: "pmarsceill/just-the-docs"
+theme: "just-the-docs"
+title: "BDK by Example"
+exclude: ["README.md", "LICENCE"]
 description: "Exploring the bitcoindevkit through a series of examples"
 
 search_enabled: true
@@ -34,4 +33,4 @@ search:
 heading_anchors: true
 
 # Meta tags
-logo: /img/png/bdk-ecosystem.png
+# logo: /img/png/bdk-ecosystem.png
