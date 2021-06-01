@@ -14,7 +14,7 @@ has_toc: false
 
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   <!-- logo -->
-  <img id="cli-logo" src="../img/bash-light.svg" width="200">
+  <img id="cli-logo" src="./img/bash-light.svg" width="200">
   
   <!-- metadata -->
   <div style="display: flex; align-items: center; justify-content: center;">

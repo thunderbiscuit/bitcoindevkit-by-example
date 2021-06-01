@@ -13,7 +13,7 @@ has_children: true
 ---
 
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
-  <img src="../img/android.svg" width="200">
+  <img src="./img/android.svg" width="200">
   
   <div style="display: flex; align-items: center; justify-content: center;">
     <div>

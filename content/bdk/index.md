@@ -15,7 +15,7 @@ has_children: true
 <div style="display: flex; justify-content: space-evenly; margin-top: 1rem;">
   
   <!-- logo -->
-  <img src="../img/rust.svg" width="200">
+  <img src="./img/rust.svg" width="200">
   
   <!-- metadata -->
   <div style="display: flex; align-items: center; justify-content: center;">
