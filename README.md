@@ -1,8 +1,8 @@
 # Bitcoindevkit by Example 😎
 
-[Check it out](https://thunderbiscuit.github.io/bitcoindevkit-by-example)!
+[You can check out the website here](https://thunderbiscuit.github.io/bitcoindevkit-by-example)!
 
-I initially wrote this for myself, but I will gladly merge PRs for more content!
+I initially wrote this for myself, but I will gladly merge PRs for more content.
 
 ## Build locally
 This website uses Jekyll, a static site generator, coupled with the simple yet very clean [just-the-docs theme](https://pmarsceill.github.io/just-the-docs/). 
