@@ -1,6 +1,6 @@
 # Bitcoindevkit by Example 😎
 
-[You can check out the website here](https://thunderbiscuit.github.io/bitcoindevkit-by-example)!
+[You can check out the website here](https://www.bitcoindevkit-by-example.com/)!
 
 I initially wrote this for myself, but I will gladly merge PRs for more content.
 
