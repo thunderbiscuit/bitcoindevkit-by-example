@@ -24,7 +24,7 @@ has_children: true
         bdk
       </h1>
       <p style="margin: 0 0 0.5em 0">
-        <em>v0.7.0</em>
+        <em>v0.8.0</em>
       </p>
       <a href="https://github.com/bitcoindevkit/bdk">
         <h4>

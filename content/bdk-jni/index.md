@@ -21,7 +21,7 @@ has_children: true
         bdk-jni
       </h1>
       <p style="margin: 0 0 0.5em 0">
-        <em>v0.1.0</em>
+        <em>v0.2.0</em>
       </p>
       <a href="https://github.com/bitcoindevkit/bdk-jni">
         <h4>
