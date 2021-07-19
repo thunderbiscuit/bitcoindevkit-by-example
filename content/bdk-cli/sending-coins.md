@@ -14,7 +14,7 @@ parent: "Command Line"
 <br/>
 
 A simple send transaction is done using the following steps:
-1. Create the transaction (`create_tx --to <address:sat>`)
+1. Create the transaction (`create_tx --to "<address:sat>"`)
 2. Sign the psbt (`sign --psbt <psbt from step 1>`)
 3. Broadcast the transaction (`broadcast --psbt <signed psbt from step 2>`)
 
@@ -25,7 +25,7 @@ The example below performs that transaction using the repl. Note that when provi
 ```sh
 bdk-cli repl --wallet bdk-by-example --descriptor "wpkh(tprv8ZgxMBicQKsPdTayefG3Up8B1Rq3AwqQDfvEjt6oJCCwse3s79er2hYn8erb4rTgddL55SGKa8TjkoytzZXc7Kj4BLZwu2rzCFbE1KMfQtF/84'/1'/0'/0/*)"
 
->> create_tx --to tb1qjpfm4vz5w2l0hzp2t0fd8esguxe08pntgv79vl:3232
+>> create_tx --to "tb1qjpfm4vz5w2l0hzp2t0fd8esguxe08pntgv79vl:3232"
 {
   "details": {
     "fees": 141,
